@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+    flex-direction: column; /* للسماح بترتيب العناصر بشكل عمودي */
+}
+
+#title {
+    font-size: 5vw; /* حجم النص متجاوب */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#calcolat {
+    font-family: Arial, sans-serif;
+    background-color: hsl(0, 0%, 15%);
+    border-radius: 15px;
+    width: 80vw; /* استخدام نسبة مئوية ليكون متجاوب */
+    max-width: 400px; /* حد أقصى للعرض */
+    overflow: hidden;
+}
+
+#display {
+    width: 100%;
+    padding: 20px;
+    font-size: 5vw; /* حجم النص متجاوب */
+    text-align: left;
+    border: none;
+    background-color: hsl(0, 0%, 20%);
+    color: white;
+}
+
+button {
+    width: 18vw; /* استخدام نسبة مئوية */
+    max-width: 100px; /* تحديد الحد الأقصى للعرض */
+    height: 18vw; /* استخدام نسبة مئوية */
+    max-height: 100px; /* تحديد الحد الأقصى للارتفاع */
+    border-radius: 50%;
+    border: none;
+    background-color: hsl(138, 100%, 51%);
+    color: white;
+    font-size: 3vw; /* حجم النص متجاوب */
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#keys {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 5vw; /* استخدام نسبة مئوية */
+    gap: 2vw; /* استخدام نسبة مئوية */
+}
+
+button:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+button:active {
+    background-color: hsl(0, 0%, 50%);
+}
+
+.Orange {
+    background-color: rgb(255, 72, 0);
+}
+
+.Orange:hover {
+    background-color: hsl(0, 0%, 40%);
+}
+
+.Orange:active {
+    background-color: hsl(0, 100%, 75%);
+}
+
+#toggle-mode {
+    background-color: white;
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 3vw; /* حجم النص متجاوب */
+    font-weight: bold;
+    border: 1px;
+    left: 5vw; /* استخدام نسبة مئوية */
+    top: 5vw; /* استخدام نسبة مئوية */
+}
